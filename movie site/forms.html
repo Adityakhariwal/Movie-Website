@@ -34,34 +34,34 @@
                     <label><input type="checkbox">Remember me</label>
                     <a href="#">Forgot Password?</a>
                 </div>
-                <button type="submit" class="btn">Login</button>
+                <button type="submit" class="btn" onclick="window.location.href='index.html';" >Login</button>
                 <div class="login-register">
-                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                    <p>Don't have an account? <a href="signup.html" class="register-link">Register</a></p>
                 </div>
             </form>
         </div>
         <div class="form-box register">
             <h2>Registration</h2>
-            <form action="#">
+            <form action="#" id="registerform">
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="person"></ion-icon>
                     </span>
-                    <input type="text" required>
+                    <input type="text" id="personname" required>
                     <label>Username</label>
                 </div>
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="mail"></ion-icon>
                     </span>
-                    <input type="email" required>
+                    <input type="email" id="emailid" required>
                     <label>Email</label>
                 </div>
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="lock-closed"></ion-icon>
                     </span>
-                    <input type="password" required>
+                    <input type="password"id="passwordid" required>
                     <label>Password</label>     
                 </div>
                 <div class="remember-forgot">
@@ -76,6 +76,7 @@
     </div>
 
     <script src="script_form.js"></script>
+    <script> src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"</script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
